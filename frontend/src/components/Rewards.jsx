@@ -11,7 +11,7 @@ const Rewards = () => {
   useEffect(() => {
     const fetchRewards = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/rewards/${user.id}`);
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/rewards/${user.id}`);
         const data = await response.json();
         setRewards(data);
       } catch (error) {
