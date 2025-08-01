@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors([
   'http://localhoat:5173',
-
+  "https://fundraising-intern-portal-omega.vercel.app"
 ]));
 app.use(express.json());
 
